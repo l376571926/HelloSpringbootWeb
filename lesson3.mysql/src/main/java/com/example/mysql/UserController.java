@@ -10,8 +10,12 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/user")
 public class UserController {
+    private final UserJPA userJPA;
+
     @Autowired
-    private UserJPA userJPA;
+    public UserController(UserJPA userJPA) {
+        this.userJPA = userJPA;
+    }
 
     @GetMapping(value = "/list")
     public List<UserEntity> list() {
