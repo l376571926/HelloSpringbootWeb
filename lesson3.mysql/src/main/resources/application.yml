@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_mysql?serverTimezone=UTC
+    username: db_mysql
+    password: 2c9264d4fc
+  jpa:
+    show-sql: true
+server:
+  port: 8081
